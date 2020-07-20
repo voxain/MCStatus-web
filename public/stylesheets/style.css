@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-body {
+body, select, input, button, textarea {
   font: 16px "Open Sans", "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #1c1d1f;
+  border: none !important;
+  outline: none !important;
 }
 
 :root{
@@ -22,6 +25,7 @@ a {
 }
 
 .main-body{
+  background: #white;
   width: calc(100% - 300px);
   height: 100%;
   position: fixed;
@@ -29,7 +33,6 @@ a {
   top: 0;
   box-sizing: border-box;
   padding: 50px;
-  animation: bodyIn .2s ease;
 }
 
 @keyframes bodyIn{

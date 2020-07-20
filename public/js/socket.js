@@ -1,6 +1,15 @@
 let socket = io(socketURL + ':' + socketPort);
 
+socket.on('disconnect', () => {
+    document.getElementById('data-indicator').style.color = '#ff0000';
+});
+
 socket.on(socketChannel, data => {
+    document.getElementById('data-indicator').style.color = '#888';
+    setTimeout(() => {
+        document.getElementById('data-indicator').style.color = '#666';
+    }, 20);
+
     switch(socketChannel) {
         case 'stats':
 

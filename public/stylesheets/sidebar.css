@@ -1,53 +1,69 @@
 .sidebar{
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--primary);
-    color: #eee;
-  }
-  
-  .sidebar-head{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 18px;
-  }
-  
-  .sidebar-head-header{
-    font-size: 24px;
-    font-weight: 600;
-  }
-  
-  .sidebar-head-serverip{
-    font-size: 16px;
-    color: #888
-  }
-  
-  .sidebar-body{
-    width: 100%;
-    height: auto;
-  }
-  
-  .sidebar-body-element{
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(to right, #00000000 0%, #00000000 50%, #4c4d4fff 50.1%, #4c4d4fff 100%);
-    background-size: 200% 100%;
-    background-position-x: 0%;
-    line-height: 60px;
-    transition: .15s;
-    cursor: pointer;
-  }
-  .sidebar-body-element:hover{
-    background-position-x: -100%;
-  }
-  
-  .sidebar-body-element-image{
-    width: 24px;
-    height: 24px;
-    margin: 18px;
-    float: left;
-  }
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  color: #eee;
+}
+
+.sidebar-head{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 18px;
+}
+
+.sidebar-head-header{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sidebar-head-serverip{
+  font-size: 16px;
+  color: #888
+}
+
+.sidebar-body{
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-body-element{
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to right, #00000000 0%, #00000000 50%, #4c4d4fff 50.1%, #4c4d4fff 100%);
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  line-height: 60px;
+  transition: .15s;
+  cursor: pointer;
+}
+.sidebar-body-element:hover{
+  background-position-x: -100%;
+}
+
+.sidebar-body-element-image{
+  width: 24px;
+  height: 24px;
+  margin: 18px;
+  float: left;
+}
+
+.sidebar-foot{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  color: #666;
+  text-align: center;
+}
+
+.foot-element{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
