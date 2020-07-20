@@ -1,0 +1,22 @@
+<link rel='stylesheet' href='/stylesheets/sidebar.css' />
+<div class="sidebar">
+    <div class="sidebar-head">
+        <a href="/"><span class="sidebar-head-header">{{ config.serverName }}</span></a><br>
+        <span class="sidebar-head-serverip"><a href="http://{{ config.serverAddress }}">{{ config.serverAddress }}</a></span>
+    </div>
+    <div class="sidebar-body">
+        <a href="/stats"><div id="page-stats" class="sidebar-body-element">
+            <img class="sidebar-body-element-image" src="/images/icons/chip.svg"> System
+        </div></a>
+
+        <a href="/players"><div id="page-players" class="sidebar-body-element">
+            <img class="sidebar-body-element-image" src="/images/icons/account-group.svg"> Players
+        </div></a>
+    </div>
+</div>
+
+<script>
+    if('{{pageID}}' != ''){
+        document.getElementById('page-{{pageID}}').style.background = '#6c6d6fff';
+    }
+</script>

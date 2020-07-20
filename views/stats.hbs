@@ -1,0 +1,28 @@
+<script>
+    let socketChannel = 'stats';
+    let socketPort = {{ config.socketPort }};
+    let socketURL = '{{ config.appURL }}';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="/js/socket.js"></script>
+
+<div class="stat-list">
+    <img class="stat-list-icon" src="/images/icons/clock-check-dark.svg"> Uptime
+    <div class="gauge-inner" id="gauge-uptime">No Data</div>
+</div>
+
+<div class="stat-list">
+    <img class="stat-list-icon" src="/images/icons/chip-dark.svg"> CPU 
+    <div class="gauge-inner" id="gauge-cpu">No Data</div>
+</div>
+
+<div class="stat-list">
+    <img class="stat-list-icon" src="/images/icons/memory-dark.svg"> RAM
+    <div class="gauge-inner" id="gauge-ram">No Data</div>
+</div>
+
+<div class="stat-list">
+    <img class="stat-list-icon" src="/images/icons/account-group-dark.svg"> 
+        <a href="/players">Players</a>
+    <div class="gauge-inner" id="gauge-players">No Data</div>
+</div>

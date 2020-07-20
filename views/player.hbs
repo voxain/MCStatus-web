@@ -1,0 +1,21 @@
+<script>
+    let socketChannel = 'player';
+    let socketPort = {{ config.socketPort }};
+    let socketURL = '{{ config.appURL }}';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="/js/socket.js"></script>
+
+<span class="sidebar-head-serverip">This data is <b>not</b> live. It refreshes when you reload the page.</span><br><br>
+<div class="stat-list" style="line-height: 27px">
+    <img class="stat-list-icon player-skin" src="https://crafatar.com/renders/body/{{ playerdata.uuid }}"> 
+    <span class="error-msg">{{ playerdata.name }}</span><br>
+    <span class="sidebar-head-serverip">Level {{ playerdata.level }}</span><br><br>
+    {{#if playerdata.op }}
+        This player is a server operator.<br>
+    {{/if }}
+    Deaths: {{ playerdata.deaths }}<br>
+    <span class="small-text">{{ playerdata.uuid }}</span><br>
+    <div class="gauge-inner" style="background-position-x: calc(({{ playerdata.health }} / 20) * -100%)">{{round playerdata.health }} HP</div>
+    <div class="gauge-inner" style="background-position-x: calc(({{ playerdata.hunger }} / 20) * -100%)">{{round playerdata.hunger }} Hunger</div>
+</div>

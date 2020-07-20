@@ -1,0 +1,11 @@
+{
+    "serverName": "My Minecraft Server",
+    "serverAddress": "mc.myserver.com",
+    "apiPort": 4567,
+    "baseURI": "/api",
+
+    "appPort": 80,
+    "socketPort": 4568,
+    "appURL": "mc.myserver.com",
+    "updateInterval": 500
+}

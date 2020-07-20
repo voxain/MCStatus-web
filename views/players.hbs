@@ -1,0 +1,11 @@
+<script>
+    let socketChannel = 'players';
+    let socketPort = {{ config.socketPort }};
+    let socketURL = '{{ config.appURL }}';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="/js/socket.js"></script>
+
+<span class="sidebar-head-serverip">This data is <b>not</b> live. It refreshes when you reload the page.</span><br><br>
+<section id="players-append">
+</section>

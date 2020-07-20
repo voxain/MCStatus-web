@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font: 16px "Open Sans", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+:root{
+  --primary: #1c1d1f;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.main-body{
+  width: calc(100% - 300px);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 50px;
+  animation: bodyIn .2s ease;
+}
+
+@keyframes bodyIn{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.stat-list{
+  width: 50%;
+  height: auto;
+  line-height: 48px;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 10px;
+  border-left: 7px solid var(--primary);
+  margin-bottom: 30px;
+}
+
+.stat-list-icon{
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  float: left;
+}
+
+.stat-list-icon.player-skin{
+  width: 120px;
+  height: 270px;
+  margin-right: 16px;
+  float: left;
+  margin-right: 40px;
+}
+
+.gauge-inner{
+  display: inline-block;
+  margin-top: 25px;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to right, #eee 0%, #eee 50%, var(--primary) 50%, var(--primary) 100%);
+  background-repeat: repeat;
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  line-height: 30px;
+  color: #888;
+  text-align: center;
+  transition: .1s ease;
+}
+
+
+.error-code{
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.error-msg{
+  font-size: 30px;
+  color: #5c5d5f;
+}
+
+.small-link{
+  font-size: 16px;
+  color: #bcbdbf;
+  text-decoration: underline;
+}
+
+.small-text{
+  font-size: 13px;
+  color: #bcbdbf;
+  font-style: italic;
+}
